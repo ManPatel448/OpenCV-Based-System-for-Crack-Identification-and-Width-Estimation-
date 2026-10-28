@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block title %}Analysis unavailable - Crack Detection{% endblock %}{% block content %}
+<div class="card card-body text-center py-5 shadow-sm">
+  <h1 class="h3">Analysis output is unavailable</h1>
+  <p class="text-muted">This analysis record is no longer available in the current application session. Upload the images again, or configure MongoDB so results persist after restarting Flask.</p>
+  <div><a class="btn btn-primary" href="/upload">Upload images again</a> <a class="btn btn-outline-secondary" href="/history">Open history</a></div>
+</div>
+{% endblock %}

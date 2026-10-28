@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block title %}Upload - Crack Detection{% endblock %}{% block content %}
+<h1>Upload crack images</h1>
+<p class="text-muted">Select one or more images containing visible cracks. Detection and measurement start automatically after upload.</p>
+<form id="analysis-form" class="card card-body" enctype="multipart/form-data">
+  <label class="dropzone mb-3" for="images">
+    <input id="images" name="images" type="file" accept=".jpg,.jpeg,.jfif,.png" multiple>
+    <span>Drop crack images here or click to browse</span>
+  </label>
+  <div id="preview" class="row g-2 mb-3"></div>
+  <p class="small text-muted mb-3">Measurements are calibrated automatically using the configured image scale.</p>
+  <button id="upload-button" class="btn btn-primary" type="submit">Upload and detect cracks</button>
+  <div id="upload-status" class="mt-3" role="alert" aria-live="polite"></div>
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block title %}Reports - Crack Detection{% endblock %}{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div>
+    <h1 class="h3 mb-1">Reports</h1>
+    <p class="text-muted mb-0">Open an analysis from history to view results or download CSV, PDF, or ZIP exports.</p>
+  </div>
+  <a href="/history" class="btn btn-primary">Browse Analyses</a>
+</div>
+<div class="card card-body shadow-sm text-center py-5">
+  <div class="py-3">
+    <h2 class="h5 text-muted mb-3">No active report selected</h2>
+    <p class="text-muted mb-4">Select an analysis from your history records to view comprehensive crack measurements and download inspection reports.</p>
+    <a href="/history" class="btn btn-outline-primary me-2">Go to History</a>
+    <a href="/upload" class="btn btn-primary">Start New Analysis</a>
+  </div>
+</div>
+{% endblock %}
